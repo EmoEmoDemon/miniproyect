@@ -21,22 +21,29 @@ const IssueList = () => {
 
   return (
     <div>
-      <h1 className="title">I S S U E S</h1>
+      <h1 className="title">Issues</h1>
       <input
         type="text"
         value={filter}
         onChange={handleFilterChange}
-        placeholder="Buscar issues"
+        placeholder="Search issues"
       />
       <ul>
         {filteredIssues.map(issue => (
           <li key={issue.id}>
             <div className="issue-details">
-              <div className="issue-title">
-                <a href={issue.html_url} target="_blank" rel="noopener noreferrer">
-                  #{issue.number}: {issue.title}
-                </a>
-                <p>Opened by: {issue.user.login}</p>
+              <div className="issue-id">
+                #{issue.number}
+              </div>
+              <div className="issue-content">
+                <div className="issue-title">
+                  <a href={issue.html_url} target="_blank" rel="noopener noreferrer">
+                    {issue.title}
+                  </a>
+                </div>
+                <div className="issue-user">
+                  By: {issue.user.login}
+                </div>
               </div>
               <div className="issue-labels">
                 {issue.labels.map(label => (

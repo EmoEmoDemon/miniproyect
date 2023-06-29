@@ -4,15 +4,7 @@ body {
   padding: 0;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  
-}
-
-h1 {
-  margin-bottom: 20px;
+.title {
   text-align: center;
 }
 
@@ -23,53 +15,70 @@ input[type="text"] {
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
-  
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: 5px solid rgba(61, 61, 61, 1);
-border-radius: 12px;
-background-color: rgba(64, 64, 64, 1);
-
+  border-radius: 12px;
+  background-color: rgba(64, 64, 64, 1);
+  
 }
 
-a {
-  color: #52c81f;
+.issue-details {
+  display: flex;
+  align-items: flex-start;
+}
+
+.issue-id {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #5c8162;
+  color: #ecdf6b;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.issue-content {
+  flex: 1;
+}
+
+.issue-title a {
+  color: #7ba078; /* Cambia el color según tus preferencias */
   text-decoration: none;
 }
 
-a:hover {
+.issue-title a:hover {
   text-decoration: underline;
 }
 
-p {
-  margin: 0;
-  font-size: 14px;
-  color: rgb(159, 205, 162);
-}
-.issue-details {
-display: flex;
-align-items: flex-start;
-}
 
-.issue-title {
-flex: 1;
+.issue-user {
+  margin-top: 5px;
+  font-size: 14px;
 }
 
 .issue-labels {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .label {
-display: inline-block;
-padding: 4px 8px;
-margin-right: 5px;
-font-size: 12px;
-background-color: #5c8162;
-color: #ecdf6b;
-border-radius: 4px;
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: 5px;
+  font-size: 12px;
+  background-color: #5c8162;
+  color: #ecdf6b;
+  border-radius: 4px;
+  text-align: right;
+  
 }
