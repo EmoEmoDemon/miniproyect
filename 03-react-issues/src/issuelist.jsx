@@ -21,7 +21,7 @@ const IssueList = () => {
 
   return (
     <div>
-      <h1 className="title">Issues</h1>
+      <h1 className="title">I S U E S S</h1>
       <input
         type="text"
         value={filter}
