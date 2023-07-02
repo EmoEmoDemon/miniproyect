@@ -31,6 +31,7 @@ li {
   border-radius: 12px;
   background-color: rgba(64, 64, 64, 1);
   
+  
 }
 
 .issue-details {
@@ -88,3 +89,18 @@ li {
   text-align: right;
   
 }
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+

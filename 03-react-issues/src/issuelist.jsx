@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import SearchBar from './SearchBar';
 
 const IssueList = () => {
   const [issues, setIssues] = useState([]);
@@ -20,14 +21,9 @@ const IssueList = () => {
   );
 
   return (
-    <div>
-      <h1 className="title">I S U E S S</h1>
-      <input
-        type="text"
-        value={filter}
-        onChange={handleFilterChange}
-        placeholder="Search issues"
-      />
+    <div className="container">
+      <h1 className="title">Issues</h1>
+      <SearchBar filter={filter} onFilterChange={handleFilterChange} />
       <ul>
         {filteredIssues.map(issue => (
           <li key={issue.id}>
